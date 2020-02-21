@@ -67,17 +67,21 @@
 	</div>
 
 	<div class="container login-fields">
-		<p class="setting-text">Username</p>
 
 		<form class="search-bar" role="form" method="get" action="/morelogin?ut=0&">
-		    <div class="form-group">
-		      <input type="text" class="form-control" id="username" placeholder="Name" name="username">
+			<p class="setting-text">Username</p>
+		    <div class="form-group" style="float: right">
+		      <input type="text" class="form-control" id="username" placeholder="Username" name="username">
 		    </div>
 
+			<div class="container" style="height: 60px"></div>
+
 			<p class="setting-text">Password</p>
-		    <div class="form-group">
+		    <div class="form-group" style="float: right">
 		      <input class="form-control" type="password" placeholder="Password" name="password">
 		    </div>
+
+			<div class="container" style="height: 50px"></div>
 
 			<div id ="done-button">
 				<input type="submit" id="submitBtn" class="btn btn-default" value="Done">
@@ -85,16 +89,12 @@
 			    
 		</form>
 
-		<div class="container" style="height: 40px"></div>
-
 	</div>
 
-	<hr>
 
 
 
-
-	<div class="container login-buttons">
+	<div class="container login-buttons" style="margin-top: 130px">
 
 		<div id ="cancel-button">
 			<a id="cancelButton" href="more?ut=0">
@@ -102,9 +102,9 @@
 			</a>
 		</div>
 
-		<hr>
-		<p>Or login through Facebook!</p>
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+<!-- 		<hr> -->
+<!-- 		<p>Or login through Facebook!</p>
+		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
 
 	</div>
 

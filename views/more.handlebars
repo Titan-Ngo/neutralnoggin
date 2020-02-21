@@ -60,14 +60,17 @@
 
 	<div class="container" id="more-page">
 
-		<h4 class="title">Settings and More</h4>
-		<p class="logMsg" id="{{loggedInProfile}}">(logged in as {{loggedInProfile}})</p>
+		<div class="container">
+			<h4 class="title">Settings and More</h4>
+			<p class="logMsg" style="float: left" id="{{loggedInProfile}}">(logged in as {{loggedInProfile}})</p>
 
-		<div id="login">
-			<a id="logoutButton" href="homeLogout?ut=0">
-				<button class="logoutButton" type="button">Logout</button>
-			</a>
-		</div>		
+			<div id="login" style="float: right">
+				<a id="logoutButton" href="homeLogout?ut=0">
+					<button class="logoutButton" type="button">Logout</button>
+				</a>
+			</div>		
+		</div>
+
 
 		<div class="container article-break"></div>
 
